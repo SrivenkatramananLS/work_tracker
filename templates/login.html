@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, #c8f1dd, #eaf7d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+    width: 340px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0px 25px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background: #e9f7e7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #4caf50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 5px 0;
+    color: #2f6f46;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #7aa88d;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    background: #f4fbf5;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #6b9078;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #7ed56f, #4caf50);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.social button {
+    width: 48%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #f3f8f4;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.footer {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #7aa88d;
+}
+
+.footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    <div class="logo">+</div>
+    <h2>My Work Tracker</h2>
+    <div class="subtitle">Track your daily productivity</div>
+
+    <form method="POST">
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="options">
+            <span>Keep me signed in</span>
+            <span>Forgot?</span>
+        </div>
+
+        <button class="login-btn">Login</button>
+    </form>
+
+    
+
+    <div class="footer">
+        New here? <a href="/register">Create account</a>
+    </div>
+</div>
+
+</body>
+</html>

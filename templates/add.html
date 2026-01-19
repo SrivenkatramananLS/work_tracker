@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, #c8f1dd, #eaf7d0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+    width: 360px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0px 25px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2f6f46;
+}
+
+.input-box {
+    background: #f4fbf5;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #7ed56f, #4caf50);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.back {
+    margin-top: 15px;
+    display: block;
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 13px;
+}
+</style>
+
+</head>
+
+<body>
+
+<<div class="card">
+    <h2>Add Work</h2>
+
+    <form method="POST">
+        <div class="input-box">
+            <input type="date" name="work_date" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" name="title" placeholder="Work title" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" name="minutes" placeholder="Minutes spent" required>
+        </div>
+
+        <button class="btn">Save</button>
+    </form>
+
+    <a href="/dashboard" class="back">← Back to Dashboard</a>
+</div>
+
+
+</body>
+</html>
